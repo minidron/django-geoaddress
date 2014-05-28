@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 from django_geoaddress import VERSION_STRING
 
 setup(
-    name='django_geoaddress',
+    name='django-geoaddress',
     version=VERSION_STRING,
     description=('Address field with GEO coordinates'),
     long_description=open('README.md').read(),
