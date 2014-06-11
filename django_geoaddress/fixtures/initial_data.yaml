@@ -1,0 +1,759 @@
+- fields:
+    title: Абхазия
+  model: django_geoaddress.country
+  pk: 1
+
+- fields:
+    title: Австралия
+  model: django_geoaddress.country
+  pk: 2
+
+- fields:
+    title: Австрия
+  model: django_geoaddress.country
+  pk: 3
+
+- fields:
+    title: Азербайджан
+  model: django_geoaddress.country
+  pk: 4
+
+- fields:
+    title: Албания
+  model: django_geoaddress.country
+  pk: 5
+
+- fields:
+    title: Алжир
+  model: django_geoaddress.country
+  pk: 6
+
+- fields:
+    title: Америка
+  model: django_geoaddress.country
+  pk: 7
+
+- fields:
+    title: Англия
+  model: django_geoaddress.country
+  pk: 8
+
+- fields:
+    title: Ангола
+  model: django_geoaddress.country
+  pk: 9
+
+- fields:
+    title: Андорра
+  model: django_geoaddress.country
+  pk: 10
+
+- fields:
+    title: Антарктида
+  model: django_geoaddress.country
+  pk: 11
+
+- fields:
+    title: Антигуа и Барбуда
+  model: django_geoaddress.country
+  pk: 12
+
+- fields:
+    title: Аргентина
+  model: django_geoaddress.country
+  pk: 13
+
+- fields:
+    title: Аруба
+  model: django_geoaddress.country
+  pk: 14
+
+- fields:
+    title: Багамы
+  model: django_geoaddress.country
+  pk: 15
+
+- fields:
+    title: Бангладеш
+  model: django_geoaddress.country
+  pk: 16
+
+- fields:
+    title: Барбадос
+  model: django_geoaddress.country
+  pk: 17
+
+- fields:
+    title: Бахрейн
+  model: django_geoaddress.country
+  pk: 18
+
+- fields:
+    title: Беларусь
+  model: django_geoaddress.country
+  pk: 19
+
+- fields:
+    title: Бельгия
+  model: django_geoaddress.country
+  pk: 20
+
+- fields:
+    title: Бенин
+  model: django_geoaddress.country
+  pk: 21
+
+- fields:
+    title: Бермуды
+  model: django_geoaddress.country
+  pk: 22
+
+- fields:
+    title: Болгария
+  model: django_geoaddress.country
+  pk: 23
+
+- fields:
+    title: Боливия
+  model: django_geoaddress.country
+  pk: 24
+
+- fields:
+    title: Босния и Герцеговина
+  model: django_geoaddress.country
+  pk: 25
+
+- fields:
+    title: Ботсвана
+  model: django_geoaddress.country
+  pk: 26
+
+- fields:
+    title: Бразилия
+  model: django_geoaddress.country
+  pk: 27
+
+- fields:
+    title: Бурунди
+  model: django_geoaddress.country
+  pk: 28
+
+- fields:
+    title: Бутан
+  model: django_geoaddress.country
+  pk: 29
+
+- fields:
+    title: Великобритания
+  model: django_geoaddress.country
+  pk: 30
+
+- fields:
+    title: Венгрия
+  model: django_geoaddress.country
+  pk: 31
+
+- fields:
+    title: Венесуэла
+  model: django_geoaddress.country
+  pk: 32
+
+- fields:
+    title: Виргинские острова
+  model: django_geoaddress.country
+  pk: 33
+
+- fields:
+    title: Вьетнам
+  model: django_geoaddress.country
+  pk: 34
+
+- fields:
+    title: Гаити
+  model: django_geoaddress.country
+  pk: 35
+
+- fields:
+    title: Гватемала
+  model: django_geoaddress.country
+  pk: 36
+
+- fields:
+    title: Гвинея
+  model: django_geoaddress.country
+  pk: 37
+
+- fields:
+    title: Германия
+  model: django_geoaddress.country
+  pk: 38
+
+- fields:
+    title: Гибралтар
+  model: django_geoaddress.country
+  pk: 39
+
+- fields:
+    title: Гондурас
+  model: django_geoaddress.country
+  pk: 40
+
+- fields:
+    title: Гонконг
+  model: django_geoaddress.country
+  pk: 41
+
+- fields:
+    title: Гренада
+  model: django_geoaddress.country
+  pk: 42
+
+- fields:
+    title: Гренландия
+  model: django_geoaddress.country
+  pk: 43
+
+- fields:
+    title: Греция
+  model: django_geoaddress.country
+  pk: 44
+
+- fields:
+    title: Дания
+  model: django_geoaddress.country
+  pk: 45
+
+- fields:
+    title: Доминиканская Республика
+  model: django_geoaddress.country
+  pk: 46
+
+- fields:
+    title: Египет
+  model: django_geoaddress.country
+  pk: 47
+
+- fields:
+    title: Зимбабве
+  model: django_geoaddress.country
+  pk: 48
+
+- fields:
+    title: Израиль
+  model: django_geoaddress.country
+  pk: 49
+
+- fields:
+    title: Индия
+  model: django_geoaddress.country
+  pk: 50
+
+- fields:
+    title: Индонезия
+  model: django_geoaddress.country
+  pk: 51
+
+- fields:
+    title: Иордания
+  model: django_geoaddress.country
+  pk: 52
+
+- fields:
+    title: Ирландия
+  model: django_geoaddress.country
+  pk: 53
+
+- fields:
+    title: Исландия
+  model: django_geoaddress.country
+  pk: 54
+
+- fields:
+    title: Испания
+  model: django_geoaddress.country
+  pk: 55
+
+- fields:
+    title: Италия
+  model: django_geoaddress.country
+  pk: 56
+
+- fields:
+    title: Камбоджа
+  model: django_geoaddress.country
+  pk: 57
+
+- fields:
+    title: Камерун
+  model: django_geoaddress.country
+  pk: 58
+
+- fields:
+    title: Канада
+  model: django_geoaddress.country
+  pk: 59
+
+- fields:
+    title: Катар
+  model: django_geoaddress.country
+  pk: 60
+
+- fields:
+    title: Кения
+  model: django_geoaddress.country
+  pk: 61
+
+- fields:
+    title: Кипр
+  model: django_geoaddress.country
+  pk: 62
+
+- fields:
+    title: Киргизия
+  model: django_geoaddress.country
+  pk: 63
+
+- fields:
+    title: Китай
+  model: django_geoaddress.country
+  pk: 64
+
+- fields:
+    title: Колумбия
+  model: django_geoaddress.country
+  pk: 65
+
+- fields:
+    title: Конго
+  model: django_geoaddress.country
+  pk: 66
+
+- fields:
+    title: Корея
+  model: django_geoaddress.country
+  pk: 67
+
+- fields:
+    title: Коста-Рика
+  model: django_geoaddress.country
+  pk: 68
+
+- fields:
+    title: Кот-д’Ивуар
+  model: django_geoaddress.country
+  pk: 69
+
+- fields:
+    title: Куба
+  model: django_geoaddress.country
+  pk: 70
+
+- fields:
+    title: Кувейт
+  model: django_geoaddress.country
+  pk: 71
+
+- fields:
+    title: Лаос
+  model: django_geoaddress.country
+  pk: 72
+
+- fields:
+    title: Латвия
+  model: django_geoaddress.country
+  pk: 73
+
+- fields:
+    title: Литва
+  model: django_geoaddress.country
+  pk: 74
+
+- fields:
+    title: Лихтенштейн
+  model: django_geoaddress.country
+  pk: 75
+
+- fields:
+    title: Люксембург
+  model: django_geoaddress.country
+  pk: 76
+
+- fields:
+    title: Маврикий
+  model: django_geoaddress.country
+  pk: 77
+
+- fields:
+    title: Мавритания
+  model: django_geoaddress.country
+  pk: 78
+
+- fields:
+    title: Мадагаскар
+  model: django_geoaddress.country
+  pk: 79
+
+- fields:
+    title: Малайзия
+  model: django_geoaddress.country
+  pk: 80
+
+- fields:
+    title: Мали
+  model: django_geoaddress.country
+  pk: 81
+
+- fields:
+    title: Мальдивы
+  model: django_geoaddress.country
+  pk: 82
+
+- fields:
+    title: Мальта
+  model: django_geoaddress.country
+  pk: 83
+
+- fields:
+    title: Марокко
+  model: django_geoaddress.country
+  pk: 84
+
+- fields:
+    title: Мартиника
+  model: django_geoaddress.country
+  pk: 85
+
+- fields:
+    title: Маршалловы Острова
+  model: django_geoaddress.country
+  pk: 86
+
+- fields:
+    title: Мексика
+  model: django_geoaddress.country
+  pk: 87
+
+- fields:
+    title: Микронезия, федеративные штаты
+  model: django_geoaddress.country
+  pk: 88
+
+- fields:
+    title: Мозамбик
+  model: django_geoaddress.country
+  pk: 89
+
+- fields:
+    title: Монако
+  model: django_geoaddress.country
+  pk: 90
+
+- fields:
+    title: Намибия
+  model: django_geoaddress.country
+  pk: 91
+
+- fields:
+    title: Непал
+  model: django_geoaddress.country
+  pk: 92
+
+- fields:
+    title: Нигер
+  model: django_geoaddress.country
+  pk: 93
+
+- fields:
+    title: Нигерия
+  model: django_geoaddress.country
+  pk: 94
+
+- fields:
+    title: Нидерланды
+  model: django_geoaddress.country
+  pk: 95
+
+- fields:
+    title: Никарагуа
+  model: django_geoaddress.country
+  pk: 96
+
+- fields:
+    title: Новая Зеландия
+  model: django_geoaddress.country
+  pk: 97
+
+- fields:
+    title: Новая Каледония
+  model: django_geoaddress.country
+  pk: 98
+
+- fields:
+    title: Норвегия
+  model: django_geoaddress.country
+  pk: 99
+
+- fields:
+    title: Объединенные Арабские Эмираты
+  model: django_geoaddress.country
+  pk: 100
+
+- fields:
+    title: Острова Кайман
+  model: django_geoaddress.country
+  pk: 101
+
+- fields:
+    title: Панама
+  model: django_geoaddress.country
+  pk: 102
+
+- fields:
+    title: Ватикан
+  model: django_geoaddress.country
+  pk: 103
+
+- fields:
+    title: Папуа — Новая Гвинея
+  model: django_geoaddress.country
+  pk: 104
+
+- fields:
+    title: Парагвай
+  model: django_geoaddress.country
+  pk: 105
+
+- fields:
+    title: Перу
+  model: django_geoaddress.country
+  pk: 106
+
+- fields:
+    title: Польша
+  model: django_geoaddress.country
+  pk: 107
+
+- fields:
+    title: Португалия
+  model: django_geoaddress.country
+  pk: 108
+
+- fields:
+    title: Пуэрто-Рико
+  model: django_geoaddress.country
+  pk: 109
+
+- fields:
+    title: Республика Македония
+  model: django_geoaddress.country
+  pk: 110
+
+- fields:
+    title: Россия
+  model: django_geoaddress.country
+  pk: 111
+
+- fields:
+    title: Румыния
+  model: django_geoaddress.country
+  pk: 112
+
+- fields:
+    title: Сан-Марино
+  model: django_geoaddress.country
+  pk: 113
+
+- fields:
+    title: Саудовская Аравия
+  model: django_geoaddress.country
+  pk: 114
+
+- fields:
+    title: Свазиленд
+  model: django_geoaddress.country
+  pk: 115
+
+- fields:
+    title: Святая Елена
+  model: django_geoaddress.country
+  pk: 116
+
+- fields:
+    title: Сейшелы
+  model: django_geoaddress.country
+  pk: 117
+
+- fields:
+    title: Сенегал
+  model: django_geoaddress.country
+  pk: 118
+
+- fields:
+    title: Сербия
+  model: django_geoaddress.country
+  pk: 119
+
+- fields:
+    title: Сингапур
+  model: django_geoaddress.country
+  pk: 120
+
+- fields:
+    title: Сирия
+  model: django_geoaddress.country
+  pk: 121
+
+- fields:
+    title: Словакия
+  model: django_geoaddress.country
+  pk: 122
+
+- fields:
+    title: Словения
+  model: django_geoaddress.country
+  pk: 123
+
+- fields:
+    title: Соединенные Штаты Америки
+  model: django_geoaddress.country
+  pk: 124
+
+- fields:
+    title: Соломоновы Острова
+  model: django_geoaddress.country
+  pk: 125
+
+- fields:
+    title: Таиланд
+  model: django_geoaddress.country
+  pk: 126
+
+- fields:
+    title: Тайвань
+  model: django_geoaddress.country
+  pk: 127
+
+- fields:
+    title: Тунис
+  model: django_geoaddress.country
+  pk: 128
+
+- fields:
+    title: Турция
+  model: django_geoaddress.country
+  pk: 129
+
+- fields:
+    title: Украина
+  model: django_geoaddress.country
+  pk: 130
+
+- fields:
+    title: Уругвай
+  model: django_geoaddress.country
+  pk: 131
+
+- fields:
+    title: Фарерские острова
+  model: django_geoaddress.country
+  pk: 132
+
+- fields:
+    title: Фиджи
+  model: django_geoaddress.country
+  pk: 133
+
+- fields:
+    title: Филиппины
+  model: django_geoaddress.country
+  pk: 134
+
+- fields:
+    title: Финляндия
+  model: django_geoaddress.country
+  pk: 135
+
+- fields:
+    title: Франция
+  model: django_geoaddress.country
+  pk: 136
+
+- fields:
+    title: Хорватия
+  model: django_geoaddress.country
+  pk: 137
+
+- fields:
+    title: Центрально-Африканская Республика
+  model: django_geoaddress.country
+  pk: 138
+
+- fields:
+    title: Чад
+  model: django_geoaddress.country
+  pk: 139
+
+- fields:
+    title: Черногория
+  model: django_geoaddress.country
+  pk: 140
+
+- fields:
+    title: Чехия
+  model: django_geoaddress.country
+  pk: 141
+
+- fields:
+    title: Чили
+  model: django_geoaddress.country
+  pk: 142
+
+- fields:
+    title: Швейцария
+  model: django_geoaddress.country
+  pk: 143
+
+- fields:
+    title: Швеция
+  model: django_geoaddress.country
+  pk: 144
+
+- fields:
+    title: Шпицберген и Ян Майен
+  model: django_geoaddress.country
+  pk: 145
+
+- fields:
+    title: Шри-Ланка
+  model: django_geoaddress.country
+  pk: 146
+
+- fields:
+    title: Эквадор
+  model: django_geoaddress.country
+  pk: 147
+
+- fields:
+    title: Эстония
+  model: django_geoaddress.country
+  pk: 148
+
+- fields:
+    title: Эфиопия
+  model: django_geoaddress.country
+  pk: 149
+
+- fields:
+    title: Южная Африка
+  model: django_geoaddress.country
+  pk: 150
+
+- fields:
+    title: Ямайка
+  model: django_geoaddress.country
+  pk: 151
+
+- fields:
+    title: Япония
+  model: django_geoaddress.country
+  pk: 152
