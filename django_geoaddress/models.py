@@ -1,6 +1,10 @@
 #--coding: utf8--
 
+from collections import OrderedDict
+
 from django.contrib.gis.db import models
+
+from django_geoaddress import geocooders
 
 
 class Country(models.Model):
@@ -42,8 +46,22 @@ class BaseAddress(models.Model):
         u'координаты', blank=True, null=True)  # широта долгота
 
     # Используем GeoManager, чтобы делать ГЕО запросы
-    manager = models.GeoManager()
+    objects = models.GeoManager()
 
     class Meta:
         verbose_name = u'адрес'
         verbose_name_plural = u'адреса'
+
+    def fetch_coordinates(self):
+        """
+        Получить координаты.
+        """
+        data = OrderedDict([
+            ('country', self.country.title),
+            ('area', self.area),
+            ('subarea', self.subarea),
+            ('locality', self.locality),
+            ('street', self.street),
+            ('house', self.house),
+        ])
+        return geocooders.yandex(data)
