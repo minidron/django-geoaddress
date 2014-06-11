@@ -1,0 +1,9 @@
+.field-suggestion .form-group {
+    display: block;
+}
+.geoaddress {
+    width: 100%;
+}
+.autocomplete-suggestions {
+    background-color: #FFF;
+}
