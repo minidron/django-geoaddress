@@ -25,7 +25,7 @@ class BaseAddress(models.Model):
     """
     Базовый класс адреса с ГЕО данными.
     """
-    country = models.OneToOneField(
+    country = models.ForeignKey(
         Country,
         verbose_name=u'страна')
     area = models.CharField(
@@ -49,6 +49,12 @@ class BaseAddress(models.Model):
     class Meta:
         verbose_name = u'адрес'
         verbose_name_plural = u'адреса'
+
+    def __unicode__(self):
+        return ', '.join(part for part in [self.zip, self.country.title,
+                                           self.area, self.subarea,
+                                           self.locality, self.street,
+                                           self.house] if part)
 
     def fetch_coordinates(self):
         """
