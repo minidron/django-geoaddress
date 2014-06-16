@@ -1,10 +1,8 @@
 #--coding: utf8--
 
-from collections import OrderedDict
+import requests
 
 from django.contrib.gis.db import models
-
-from django_geoaddress import geocooders
 
 
 class Country(models.Model):
@@ -54,14 +52,23 @@ class BaseAddress(models.Model):
 
     def fetch_coordinates(self):
         """
-        Получить координаты.
+        Запрос координатов объекта с Яндекса.
         """
-        data = OrderedDict([
-            ('country', self.country.title),
-            ('area', self.area),
-            ('subarea', self.subarea),
-            ('locality', self.locality),
-            ('street', self.street),
-            ('house', self.house),
-        ])
-        return geocooders.yandex(data)
+        query = ',+'.join(
+            part for part in [self.country.title, self.area, self.subarea,
+                              self.locality, self.street, self.house] if part)
+        url = u'http://geocode-maps.yandex.ru/1.x/?geocode=%s&format=json' % (
+            query)
+
+        try:
+            r = requests.get(url).json()
+        except requests.exceptions.RequestException:
+            return None
+
+        try:
+            longitude, latitude = (r['response']['GeoObjectCollection']
+                                   ['featureMember'][0]['GeoObject']['Point']
+                                   ['pos']).split(' ')
+            return U'POINT(%s %s)' % (latitude, longitude)
+        except (KeyError, IndexError):
+            return None
