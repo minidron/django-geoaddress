@@ -3,6 +3,8 @@
 import requests
 
 from django.contrib.gis.db import models
+from django.contrib.gis.geos import GEOSGeometry
+
 
 
 class Country(models.Model):
@@ -75,6 +77,6 @@ class BaseAddress(models.Model):
             longitude, latitude = (r['response']['GeoObjectCollection']
                                    ['featureMember'][0]['GeoObject']['Point']
                                    ['pos']).split(' ')
-            return U'POINT(%s %s)' % (latitude, longitude)
+            return GEOSGeometry(U'POINT(%s %s)' % (latitude, longitude))
         except (KeyError, IndexError):
             return None
