@@ -11,8 +11,9 @@ DEFAULT_COUNTRY = getattr(settings, 'DEFAULT_COUNTRY', 0)
 
 class BaseAddressForm(forms.ModelForm):
     suggestion = forms.CharField(
-        label=u'Подсказки', required=False, widget=AddressWidget,
-        help_text=u'например: Россия, Серпухов, Советская, 69/22')
+        label=u'Быстрый поиск адреса', required=False, widget=AddressWidget,
+        help_text=u'Поиск адреса. Вводить через запятую. Например: Россия, '
+                  u'Серпухов, Советская, 69/22')
 
     class Meta:
         model = BaseAddress
