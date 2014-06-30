@@ -6,7 +6,6 @@ from django.contrib.gis.db import models
 from django.contrib.gis.geos import GEOSGeometry
 
 
-
 class Country(models.Model):
     """
     Модель страны.
