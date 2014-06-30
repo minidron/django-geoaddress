@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 
     function fill_address (obj, address) {
-        var items = obj.closest('form').find('[data-address-type]');
+        var items = obj.closest('fieldset').find('[data-address-type]');
 
         $.each(items, function (index, el) {
             if ($(el).is('select')) {
@@ -67,6 +67,7 @@ $(document).ready(function() {
             paramName: 'geocode',
             minChars: 1,
             deferRequestBy: 300,
+            triggerSelectOnValidInput: false,
             transformResult: function (response) {
                 response = response.response.GeoObjectCollection.featureMember;
 
