@@ -1,2 +1,2 @@
-recursive-include django_geoaddress/fixtures
-recursive-include django_geoaddress/static
+graft django_geoaddress/fixtures
+graft django_geoaddress/static
