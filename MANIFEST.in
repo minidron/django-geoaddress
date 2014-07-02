@@ -1,2 +1,2 @@
-graft django_geoaddress/fixtures
-graft django_geoaddress/static
+recursive-include django_geoaddress/fixtures *.yaml
+recursive-include django_geoaddress/static/django_geoaddress/js *.js
