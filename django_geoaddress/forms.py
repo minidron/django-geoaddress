@@ -18,6 +18,8 @@ class BaseAddressForm(forms.ModelForm):
     class Meta:
         model = BaseAddress
         exclude = ['coordinates']
+        fields = ['suggestion', 'country', 'area', 'subarea', 'locality',
+                  'street', 'house', 'zip']
         widgets = {
             'country': forms.Select(
                 attrs={'data-address-type': 'country'}),
