@@ -17,6 +17,7 @@ class BaseAddressForm(forms.ModelForm):
 
     class Meta:
         model = BaseAddress
+        exclude = ['coordinates']
         fields = ['suggestion', 'country', 'area', 'subarea', 'locality',
                   'street', 'house', 'apartment', 'zip']
         widgets = {
