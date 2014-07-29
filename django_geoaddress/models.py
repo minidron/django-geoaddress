@@ -40,7 +40,7 @@ class BaseAddress(models.Model):
     house = models.CharField(
         u'дом', max_length=50, blank=True)
     apartment = models.CharField(
-        u'квартира', max_length=5, blank=True)
+        u'офис', max_length=10, blank=True)
     zip = models.CharField(
         u'почтовый индекс', max_length=10, blank=True)
     coordinates = models.PointField(
