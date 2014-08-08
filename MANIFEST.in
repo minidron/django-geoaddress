@@ -1,2 +1,3 @@
 recursive-include django_geoaddress/fixtures *.yaml
 recursive-include django_geoaddress/static/django_geoaddress/js *.js
+recursive-include django_geoaddress/static/django_geoaddress/css *.css
