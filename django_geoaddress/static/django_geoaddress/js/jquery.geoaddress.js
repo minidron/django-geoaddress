@@ -44,7 +44,7 @@ $(document).ready(function() {
 
 
     function fill_address (obj, address) {
-        var items = obj.closest('fieldset').find('[data-address-type]');
+        var items = obj.closest('fieldset, .fieldset').find('[data-address-type]');
 
         $.each(items, function (index, el) {
             if ($(el).is('select')) {
