@@ -1,6 +1,6 @@
 #--coding: utf8--
 
-from django import forms
+from django.contrib.gis import forms
 from django.conf import settings
 
 from django_geoaddress.models import BaseAddress, Country
@@ -45,3 +45,11 @@ class BaseAddressForm(forms.ModelForm):
         else:
             COUNTRY = u'%s, ' % Country.objects.get(pk=DEFAULT_COUNTRY)
         self.fields['suggestion'].initial = COUNTRY
+
+
+class RegionForm(forms.ModelForm):
+    class Meta:
+        widgets = {
+            'coordinates': forms.OSMWidget(
+                attrs={'map_width': 900, 'map_height': 500}),
+        }

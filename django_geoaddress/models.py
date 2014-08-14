@@ -78,6 +78,24 @@ class BaseAddress(models.Model):
             longitude, latitude = (r['response']['GeoObjectCollection']
                                    ['featureMember'][0]['GeoObject']['Point']
                                    ['pos']).split(' ')
-            return GEOSGeometry(U'POINT(%s %s)' % (latitude, longitude))
+            return GEOSGeometry(U'POINT(%s %s)' % (longitude, latitude))
         except (KeyError, IndexError):
             return None
+
+
+class Region(models.Model):
+    """
+    Класс для географического региона.
+    """
+    name = models.CharField(u'название', max_length=255)
+    coordinates = models.PolygonField(u'координаты')
+
+    # Используем GeoManager, чтобы делать ГЕО запросы
+    objects = models.GeoManager()
+
+    class Meta:
+        verbose_name = u'регион'
+        verbose_name_plural = u'регионы'
+
+    def __unicode__(self):
+        return self.name
