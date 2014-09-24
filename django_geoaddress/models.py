@@ -82,6 +82,9 @@ class BaseAddress(models.Model):
         except (KeyError, IndexError):
             return None
 
+    def get_short_address(self):
+        return ', '.join(part for part in [self.area, self.locality] if part)
+
 
 class Region(models.Model):
     """
