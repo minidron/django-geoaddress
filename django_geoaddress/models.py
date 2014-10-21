@@ -78,7 +78,7 @@ class BaseAddress(models.Model):
             longitude, latitude = (r['response']['GeoObjectCollection']
                                    ['featureMember'][0]['GeoObject']['Point']
                                    ['pos']).split(' ')
-            return GEOSGeometry(U'POINT(%s %s)' % (longitude, latitude))
+            return GEOSGeometry(U'POINT(%s %s)' % (latitude, longitude))
         except (KeyError, IndexError):
             return None
 
