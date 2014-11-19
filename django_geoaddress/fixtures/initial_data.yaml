@@ -219,6 +219,11 @@
   pk: 44
 
 - fields:
+    title: Грузия
+  model: django_geoaddress.country
+  pk: 153
+
+- fields:
     title: Дания
   model: django_geoaddress.country
   pk: 45
