@@ -45,11 +45,3 @@ class BaseAddressForm(forms.ModelForm):
         else:
             COUNTRY = u'%s, ' % Country.objects.get(pk=DEFAULT_COUNTRY)
         self.fields['suggestion'].initial = COUNTRY
-
-
-class RegionForm(forms.ModelForm):
-    class Meta:
-        widgets = {
-            'coordinates': forms.OSMWidget(
-                attrs={'map_width': 900, 'map_height': 500}),
-        }
