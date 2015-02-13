@@ -75,7 +75,7 @@ class BaseAddress(models.Model):
             return None
 
         try:
-            longitude, latitude = (r['response']['GeoObjectCollection']
+            latitude, longitude = (r['response']['GeoObjectCollection']
                                    ['featureMember'][0]['GeoObject']['Point']
                                    ['pos']).split(' ')
             return GEOSGeometry(U'POINT(%s %s)' % (latitude, longitude))
