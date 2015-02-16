@@ -11,5 +11,11 @@ class Command(NoArgsCommand):
     """
     def handle_noargs(self, **options):
         for address in BaseAddress.objects.all():
+            self.stdout.write(U'%s: %s - [%s, %s]' % (
+                address.pk, address,
+                address.coordinates.x, address.coordinates.y))
             (BaseAddress.objects.filter(pk=address.pk)
                 .update(coordinates=address.fetch_coordinates()))
+            self.stdout.write(U'[%s, %s]' % (
+                address.coordinates.x, address.coordinates.y))
+            self.stdout.write(U'-------------------')
