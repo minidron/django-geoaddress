@@ -762,3 +762,8 @@
     title: Япония
   model: django_geoaddress.country
   pk: 152
+
+- fields:
+    title: Казахстан
+  model: django_geoaddress.country
+  pk: 153
