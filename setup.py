@@ -1,12 +1,10 @@
-#--coding: utf8--
-
+# --coding: utf8--
 from setuptools import setup, find_packages
 
-from django_geoaddress import VERSION_STRING
 
 setup(
     name='django-geoaddress',
-    version=VERSION_STRING,
+    version='0.1.6',
     description=('Address field with GEO coordinates'),
     long_description=open('README.md').read(),
     author='Pavel ALekin',
