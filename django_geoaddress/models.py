@@ -99,6 +99,7 @@ class Region(models.Model):
     class Meta:
         verbose_name = u'регион'
         verbose_name_plural = u'регионы'
+        ordering = ['name']
 
     def __unicode__(self):
         return self.name
