@@ -16,9 +16,8 @@ class BaseAddressForm(forms.ModelForm):
 
     class Meta:
         model = BaseAddress
-        exclude = ['coordinates']
         fields = ['suggestion', 'country', 'area', 'subarea', 'locality',
-                  'street', 'house', 'apartment', 'zip']
+                  'street', 'house', 'apartment', 'zip', 'coordinates']
         widgets = {
             'country': forms.Select(
                 attrs={'data-address-type': 'country'}),
@@ -32,6 +31,7 @@ class BaseAddressForm(forms.ModelForm):
                 attrs={'data-address-type': 'street'}),
             'house': forms.TextInput(
                 attrs={'data-address-type': 'house'}),
+            'coordinates': forms.OSMWidget,
         }
 
     def __init__(self, *args, **kwargs):
@@ -44,3 +44,12 @@ class BaseAddressForm(forms.ModelForm):
         else:
             COUNTRY = u'%s, ' % Country.objects.get(pk=DEFAULT_COUNTRY)
         self.fields['suggestion'].initial = COUNTRY
+
+    def save(self, commit=True, *args, **kwargs):
+        instance = super(BaseAddressForm, self).save(commit=False)
+        if commit:
+            if not set(['area', 'subarea', 'locality', 'street', 'house',
+                        'apartment', 'zip']).isdisjoint(self.changed_data):
+                if 'coordinates' not in self.changed_data:
+                    instance.coordinates = instance.fetch_coordinates()
+            instance.save()
