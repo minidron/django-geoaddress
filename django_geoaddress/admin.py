@@ -1,5 +1,4 @@
-# coding=utf-8
-
+# --coding: utf8--
 from django.contrib import admin
 from django.contrib.gis import admin as gis_admin
 

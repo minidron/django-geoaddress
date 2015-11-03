@@ -1,5 +1,4 @@
-# coding=utf-8
-
+# --coding: utf8--
 from django.core.management.base import NoArgsCommand
 
 from django_geoaddress.models import BaseAddress

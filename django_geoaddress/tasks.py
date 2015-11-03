@@ -1,5 +1,4 @@
-#--coding: utf8--
-
+# --coding: utf8--
 from celery import shared_task
 
 from django_geoaddress.models import BaseAddress

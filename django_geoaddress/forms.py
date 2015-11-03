@@ -1,5 +1,4 @@
-#--coding: utf8--
-
+# --coding: utf8--
 from django.contrib.gis import forms
 from django.conf import settings
 
