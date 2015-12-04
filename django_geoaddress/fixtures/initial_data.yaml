@@ -767,3 +767,8 @@
     title: Грузия
   model: django_geoaddress.country
   pk: 154
+
+- fields:
+    title: Армения
+  model: django_geoaddress.country
+  pk: 155
