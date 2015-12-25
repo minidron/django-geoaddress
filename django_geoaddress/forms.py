@@ -46,9 +46,10 @@ class BaseAddressForm(forms.ModelForm):
         self.fields['suggestion'].initial = COUNTRY
 
     def save(self, commit=True):
-        instance = super(BaseAddressForm, self).save(commit=False)
         if not set(['area', 'subarea', 'locality', 'street', 'house',
                     'apartment', 'zip']).isdisjoint(self.changed_data):
             if 'coordinates' not in self.changed_data:
-                instance.coordinates = instance.fetch_coordinates()
-        return instance
+                self.instance.coordinates = self.instance.fetch_coordinates()
+        if commit:
+            self.instance.save()
+        return self.instance
