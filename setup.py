@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-geoaddress',
-    version='0.1.14',
+    version='0.1.15',
     description=('Address field with GEO coordinates'),
     long_description=open('README.md').read(),
     author='Pavel ALekin',
